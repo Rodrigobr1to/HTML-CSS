@@ -1,0 +1,35 @@
+PROPRIEDADES DE ESTILO DE CADA PARTE ANATÔMICA DE UMA CAIXA:
+
+PROPRIEDADES - BORDA: As principais Propriedades de Estilo para bordas são: " border-width " (espessura da borda), " border-style " (estilo da borda) e " border-color " (cor da borda).
+
+Os valores mais utilizados para a Propriedade de Estilo que define o estilo de uma borda (border-style), são: " solid " (linha sólida), " dashed " (borda tracejada), " dotted " (borda pontilhada), " double " (linha dupla) e o " groove " (borda "3d")
+
+Sendo que podemos utilizar uma shorthand para inserir e simplificar todas essas declarações de bordas em uma única linha, exemplo: " border: 10px solid black; " (Siga a ordem de inserção de valores do exemplo na hora de usar uma shorthand, caso contrário não funcionará corretamente)
+
+PROPRIEDADES - PADDING: As principais Propriedades de Estilo para padding são: " padding-top " (acolchoamento da parte de cima de um elemento), " padding-right " (parte direita), " padding-bottom " (parte de baixo) e " padding-left " (parte esquerda) - O valor dessas propriedades geralmente é inserido em px.
+
+Existe um SENTIDO/ORDEM correto PARA INSERIR as propriedades de padding descritas acima. A "direção" correta é: 
+
+1) - Top 
+2) - Right
+3) - Bottom
+4) - left
+
+Exemplo: 
+
+padding-top: 10px;
+padding-right: 10px;
+padding-bottom: 10x;
+padding-left: 10px;
+
+É importante declarar nessa ordem, pois é necessário ser condizente com a direção e sentido padrão do modelo de caixas do DevTools, que segue a direção de um ponteiro de relógio.
+
+Também podemos utilizar uma shorthand para inserir e simplificar todas essas declarações de padding em uma única linha, exemplo: " padding: 15px 10px 10px 15px; "
+
+OBSERVAÇÃO: Mesmo em shorthands como a do exemplo acima, os valores devem ser declarados na ordem orientada ( top , right , bottom e left ), para que consigamos nos nortear e especificar corretamente o espaçamento certo para o respectivo lado/sentido.
+
+Se quisermos configurar os quatro lados do padding de uma só vez e constituir um padding igualitário (mesmo valor nos quatro lados), podemos simplesmente inserir uma única vez a Propriedade "padding" com o valor em px desejado, esse valor será inserido nos quatro lados do elemento automaticamente, exemplo: " padding: 10px; "
+
+Também podemos colocar só dois valores em uma propriedade padding, exemplo: " padding: 10px 20px; " - Quando colocamos somente dois valores, significa que os sentidos de CIMA E DE BAIXO são representados pelo primeiro valor e os sentidos de ESQUERDA E DIREITA são representados pelo segundo valor .
+
+Atenção: A área do "body" na tela do site, tanto no HTML quanto no CSS, não é composta pelo corpo inteiro, por toda a tela do navegador (parte branca) e sim por uma box, que está contendo todo o nosso conteúdo.

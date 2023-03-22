@@ -1,0 +1,38 @@
+codigo
+ex:
+
+No arquivo HTML 
+<h1 class = "nome que voce quiser"> frase ou texto </h1>
+ou se quiser tambem posso envelopar uma frase ou texto e usar a tag <span class = "nome qualquer"> </span>
+que tambem da certo.
+Tambem e permitido aplicar mais de uma classe em um elemento.
+ex:
+HTML
+<h1 class = "destaque basico(nao e necessario colocar virgula)"> frase </h1>
+CSS
+.destaque{
+	background...
+}
+.basico{
+	background...
+}
+Assim ele vai ficar de acordo com o modelo basico junto ao modelo destaque.
+
+LEMBRANDO
+Referente aos id's, nós temos uma grande limitação: Dentro de um documento HTML,
+só se pode ter um elemento com o "id" e o seu respectivo nome.
+
+Você pode ter mais de um id em sua página tranquilamente. O que não pode é utilizar
+dois com o mesmo nome / texto no id. O id é como se fosse um CPF (1 número por pessoa)
+enquanto a class é o nome (no qual várias pessoas podem ter o mesmo nome).
+
+No arquivo CSS
+.nome que eu coloquei{
+	background....
+	font...
+}
+
+  id em HTML = # em CSS
+     class em HTML = . em CSS
+
+ 

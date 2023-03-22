@@ -1,0 +1,3 @@
+Capturar fontes usadas em um site
+
+	abrir o Chrome Web Store, procurar na loja por Fonts ninja e habilitar a extencáo.

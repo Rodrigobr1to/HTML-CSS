@@ -1,0 +1,16 @@
+Importar fontes de:  google fonts
+
+ -> Escolher a fonte e adicionar todos os 'styles' que deseja usar;
+
+ -> Em 'view selected families', copiar o código da fonte entre <style> e colar nas primeiras linhas parte de estilo CSS, antes dos parâmetros:
+
+	@import url ('link css2
+	family = Kaushan+Script&display=swap');
+
+-> Copiar o código em CSS rules e colar no parâmetro onde deseja usar a fonte, para especificar a font-family:	
+
+	body {
+            font-family: 'Work Sans', Arial, Verdana, sans-serif;
+	}
+
+Dica: Antes de copiar o código do Google Fonts, desativar a tradução, pois ela cria espaçamentos, troca vírgulas por pontos e altera a escrita de algumas palavras no site.

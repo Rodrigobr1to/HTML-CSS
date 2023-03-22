@@ -1,0 +1,21 @@
+Caso queira uma borda com um visual personalizado, podemos adicionar uma imagem como borda e ainda configurar alguns aspectos desta imagem . Podemos definir uma imagem para servir de borda.
+
+Para fazer isso, usamos a Propriedade de Estilo " border-image ".
+
+PROPRIEDADES - BORDER-IMAGE: As principais Propriedades de Estilo para "Imagem como Borda" (border-image) são:
+
+border-image-source (onde inserimos o endereço da imagem adequada dentro do campo "url")
+
+border-image-slice (propriedade que "fatia" a imagem que inserimos, é necessário colocar um valor numérico, sem unidade de medida)
+
+border-image-repeat (comportamento do fatiamento, os valores mais usados para essa propriedade são "stretch" e  "repeat")
+
+Também podemos utilizar uma SHORTHAND para inserir e simplificar todas essas declarações de border-image em uma única linha, exemplo: " border-image: url (imagens/exemplo.jpeg) 30 repeat; " (Siga a ordem de inserção de valores do exemplo na hora de usar uma shorthand, caso contrário não funcionará corretamente)
+
+IMPORTANTE: Para utilizar as Propriedades de Estilo border-image descritas acima, devemos primeiramente configurar uma borda comum (ex: border: 10px solid transparent;) para o elemento que escolhemos... Caso contrário as configurações border-image acima não terão efeito.
+
+Ao configurar as propriedades border-image, é interessante abrir o DevTools e formatar os valores das propriedades de borda e border-image pelo Sub Menu de Regulagem da interface DevTools de maneira manual e observando as mudanças em tempo real na tela do navegador, até encontrar a configuração ideal... Passando essa configuração ideal para o código no VSC posteriormente.
+
+Dependendo do efeito que queremos, também é necessário uma imagem adequada para dar esse efeito ideal.
+
+Observação: Geralmente bordas com imagens (border-image) ficam feias e estranhas, então essa técnica não é muito recomendada... Use apenas em último caso.

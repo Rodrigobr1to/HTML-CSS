@@ -1,0 +1,33 @@
+Quando vamos iniciar um projeto, antes de começarmos a mexer no código, é essencial que façamos um planejamento de como vai ser a estrutura desse site. O planejamento de um site é algo muito importante, tão importante que inclusive existem algumas ferramentas de planejamento de sites.
+
+Na prática, para fazer o planejamento, temos que ter em mente três itens:
+
+1) - Layout do Site
+2) - Paleta de Cores do Site
+3) - Fontes de Texto do Projeto
+
+LAYOUT:
+
+Devemos prototipar a estrutura do layout do nosso site através de um " Mock " ou " Wireframe ", ambos tem funções bem semelhantes:
+
+Mock: Objetos mock, objetos simulados ou simplesmente mock em desenvolvimento de software são objetos que simulam o comportamento de objetos reais de forma controlada, simula a estrutura básica e o formato de um site (um Mock NÃO se preocupa com cores ou imagens, mas sim somente com a forma da estrutura básica, com a modelagem).
+
+Wireframe: Um wireframe de site web ou website wireframe é um protótipo usado em design de interface para sugerir a estrutura de um sítio web e relacionamentos entre suas páginas . Um wireframe web é uma ilustração (que pode ser colorida e conter imagens ) semelhante do layout de elementos fundamentais na interface.
+
+A ferramenta utilizada no vídeo para elaborar a prototipação do layout do nosso projeto foi o " MockFlow ", atualmente (08/01/2023) essa ferramenta ainda está funcionando e possui todos os recursos mostrados no vídeo... Entretanto o site atualizou e agora tem uma interface inicial um pouco diferente. Como ferramenta alternativa ao "MockFlow", também existe o " Figma ".
+
+Ao logar e entrar na ferramenta MockFlow, devemos abrir o menu da interface e começar a montar o protótipo da estrutura do nosso site, inserindo e organizando as caixas que o nosso projeto terá. 
+
+Você deve manipular os elementos disponíveis no menu, como browsers frames, retângulos, caixas de títulos, caixas de texto, caixas de imagens e etc... Você também deve manipular a altura (height) e largura (width) desses elementos e deixar tudo isso documentado, simule cada parte da interface do site (header, nav, main, sections, articles, footer e tec) e coloque elementos dentro de outros elementos... Faça isso até formar um protótipo que considera ideal.
+
+O modelo de layout apresentado no vídeo será usado no nosso projeto, mas lembre-se que não existe somente esse modelo e que você pode usar sua criatividade para criar seus próprios ou se inspirar em modelos de outros sites e tentar replicá-los.
+
+PALETA DE CORES:
+
+Devemos criar uma Paleta de Cores harmônica com a ferramenta do "Adobe Color" ou qualquer outra ferramenta já apresentada. No caso a Paleta utilizada no vídeo é monocromática, com diferentes tons de verde (cor da logo do Android).
+
+FONTES DE TEXTO:
+
+Devemos escolher um conjunto adequado de fontes de texto para o projeto, que podem ser padrões, externas web ou externas de forma local (baixadas). Use as ferramentas Google Fonts e uma biblioteca de fontes locais de sua preferência.
+
+Nota: A parte do planejamento pode ser um pouco demorada, mas montar o mock, essa representação visual estruturada e simplificada do conceito do site e etc, é muito útil... Pois teremos uma ideia de como o nosso site será, isso vai te levar a montar essa diagramação muito mais facilmente lá na frente na horar de colocar a mão no código.

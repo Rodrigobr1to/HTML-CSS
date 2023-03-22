@@ -1,0 +1,47 @@
+PROPRIEDADES DE ESTILO PARA LISTAS:
+
+Segue algumas Propriedades de Estilo extras apresentadas no vídeo para usarmos dentro de seletores de listas ( ex.: ul {...} ):
+
+Quando criamos uma lista dentro de outro elemento, dentro de um aside por exemplo, geralmente as "bolinhas" da lista (marcadores sequenciais no caso de listas ordenadas) irão ficar para fora do elemento pai (aside)... Para resolver isso e manter a lista inteira dentro do elemento pai, devemos utilizar a Propriedade de Estilo " list-style-position " com o valor " inside " (por padrão marcadores de listas são posicionados com o valor " outside "). Essa propriedade define a posição dos marcadores da lista e dessa forma as "bolinhas" ficarão para dentro do elemento pai.
+
+Outra questão, às vezes temos uma lista com muitos itens, muito extensa... E queremos dividi-la em duas partes para manter uma formatação mais agradável... Para fazer isso, temos a Propriedade de Estilo " columns " com o valor " 2 ". Com isso iremos dividir a nossa lista em duas colunas (se quiser dividir em mais de duas colunas é só alterar o valor numérico da propriedade).
+
+É possível trocar as "bolinhas" ou marcadores de listas por outro símbolo, um emoji por exemplo. Para fazer isso, devemos usar a Propriedade de Estilo " list-style-type "... Como valor dessa propriedade, devemos colocar entre aspas 'simples' o número do código do emoji que escolhermos (sem o "U+"), e após isso, para de fato carregar o emoji, adicionar uma contrabarra ( \ ) antes do código do emoji e ainda dentro das aspas 'simples'. Obs.: A troca de símbolos de lista não é 100% compatível com todos os navegadores.
+
+Uma coisa que pode acontecer é o nosso símbolo ficar "grudado" no item da lista, para evitar isso é indicado acrescentar um "espaço" entre o emoji e o item de lista. Para fazer isso, ainda dentro das aspas 'simples' e DEPOIS do código do emoji, acrescente outra contrabarra ( \ ) e logo após isso o código " 00A0 " ou " 0020 " (comando de espaço ). Se você quiser, pode inserir mais de um espaço, é só repetir o processo. Obs.: Sempre que você quiser dar um "espaço" ou inserir emojis pelo CSS, para qualquer outro elemento e não somente listas, faça como foi orientado nesse texto. 
+
+Exemplo geral:
+
+ul {
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\1F5F8\00A0\00A0';
+}
+
+Nota: Ainda existem muitas outras Propriedades de Estilo para listas além dessas três apresentadas no vídeo e descritas nesse texto.
+
+MARGIN NEGATIVA:
+
+No nosso projeto, dentro da área " Saiba Mais " (aside), formatamos o nosso h3 de um jeito que parece que o subtítulo faz parte do topo da caixa. Para fazer isso, inicialmente atribuímos um destaque de cores ao subtítulo e adicionamos um pequeno padding de 10px no mesmo... 
+
+O resultado desejado seria que a caixa do h3 crescesse para "fora" e ocupasse a exata forma do topo da caixa do aside, resultando no efeito descrito.
+
+Para isso, configuramos as margins laterais e superior do nosso h3 com um valor negativo de -10px, dessa forma a caixa do h3 irá crescer para "fora" e ocupará a forma do topo da caixa aside. A margin (espaçamento externo) foi configurada com um valor negativo, na prática essa margin está indo para dentro e se expandindo de forma inversa, abrangendo o topo do aside. Uma mesma configuração com um valor positivo no margin não daria o mesmo efeito.
+
+Para fechar, posteriormente é só fazer o arredondamento da parte de cima da caixa do h3, para ficar condizente com a parte inferior da nossa caixa aside.
+
+
+COLOCAR EMOJI EM  LINKS EXTERNOS
+ 
+NO HTML
+Cria uma classe nos links externos, em seguida pesquise o emoji (emojipedia) e pegue somente o codigo sem o U +.
+
+NO CSS
+Crie uma classe externo.
+
+EX:
+
+a.(nome da classe)::after{
+	content: '00A0\codigo';  // tem que ser o contra barra, e o 00A0 serve pra dar um espaço entre eles.
+
+

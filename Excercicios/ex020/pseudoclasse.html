@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div{
+            background-color: lightgrey;
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 100px;
+        }
+
+        div > p{
+            display: none;
+        }
+
+        div:hover{
+            background-color: aliceblue;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        div:hover > p{
+            margin: 210px 10px 0px 0px;
+            display: inline-block;
+            background-color: aliceblue;
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+</html>

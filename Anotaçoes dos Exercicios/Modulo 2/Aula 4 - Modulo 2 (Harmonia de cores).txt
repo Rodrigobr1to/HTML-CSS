@@ -1,0 +1,10 @@
+Harmonia de cores: 
+    - Círculo cromático
+        - cores primárias: amarelo, azul e vermelho;
+        - cores secundárias: laranja, violeta e verde;
+        - cores terciárias: cor primária + cor secundária; ex: amarelo-esverdeado;
+        - temperatura das cores: frias e quentes;
+        - cores complementares: maior contraste;
+        - cores análogas: cores vizinhas;
+        - cores intercaladas;
+        - monocromia;

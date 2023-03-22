@@ -1,0 +1,19 @@
+Usando fontes externas baixadas 
+
+Baixar a fonte no site Dafont.com e extrair, colocar @font-face nas primeiras linhas
+de estilo CSS. Depois dar um nome no Font-family em seguida importar a URL (control + espaço)
+e o foramto (format()).
+
+ 	tipos de format()
+	- opentype (OTF)
+	- truetype (TFF)
+	- embedded-oppentype
+	- truetype-att ( Apple advance, typography)
+	- SVG
+
+Ex: @font-face {
+            font-family: nomedafonte;
+            src: url(lugar onde se encontra a fonte);  /*APERTE CTRL + ESPAÇO PARA SELECIONAR O ARQUIVO*/
+        }
+
+e não se esqueça de colocar o nome da fonte onde vc quer que seja alterada, tipo o H1 ou o Body por exemplo.

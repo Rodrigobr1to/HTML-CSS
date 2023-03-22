@@ -1,0 +1,58 @@
+Peso (negrito):	
+
+		- fonte mais cheia (negrito) ou fina
+		- não serve para fontes simples (arial, verdana, times,...)
+		- serve pra fontes como Work Sans (import google)
+
+	font-weight: nome ou número;	    
+
+   nome:	- lighter		número:	- 100   - 500   - 900
+		- normal				- 200   - 600
+		- bold				- 300   - 700
+		- bolder				- 400   - 800
+
+
+Estilo (itálico):
+
+	font-style: valor;		valor:  - normal
+							   - italic
+
+Decoração (sublinhado):
+
+	text-decoration: underline;
+
+
+Shorthand font: simplificando fontes.
+
+   Ex:	 font-family: 'Work Sans', sans-serif;
+	         font-weight: bolder;
+	         font-size: 3em;
+	         font-style: italic;
+
+      Simplificando:
+
+		font:  italic  bolder  3em  'Work Sans', sans-serif;
+
+- A sequência deve ser:	
+
+		font-style   ->   font-weight   ->   font-size   ->   font-family;
+
+- Não precisa ter todas as propriedades, mas a sequência deve ser seguida;
+
+  Ex:		font:  bold  2em  'Work Sans';
+Basicamente temos quatro tipos de Alinhamento de Texto: 
+
+	- Alinhamento à esquerda
+	- Alinhamento à direita 
+	- Centralizado
+	- Justify
+
+Os textos no HTML (p, h1, h2 e etc.) já vem por padrão alinhados à esquerda da tela, 
+mas se quisermos mudar esse alinhamento, devemos usar a Propriedade de Estilo "text-align", 
+os valores mais comuns dessa propriedade são: center, right, left e justify
+
+O valor "center" alinha o texto no centro da tela, o valor "right" alinha o texto na parte 
+direita da tela, o valor "left" alinha o texto na parte esquerda da tela... Sendo que o texto 
+de PARÁGRAFOS normalmente tem um alinhamento nos DOIS LADOS, à esquerda e à direita... que é a função fundamental do valor "justify".
+
+Existe uma Propriedade de Estilo chamada "text-indent", que é responsável por dar aquele recuo no início de um parágrafo: Geralmente colocamos o valor dessa propriedade como "30px" de recuo.

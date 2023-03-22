@@ -1,0 +1,22 @@
+Parâmetros:
+
+   height	->	altura
+   width	->	largura
+   border	->	border
+   padding	->	espaçamento interno em volta do texto, separando da borda
+   margin	->	espaçamento externo em volta da borda
+   outline	->	contorno externo em volta da borda
+
+Tipos de Caixas:
+
+ -  box-level:  pula pra linha de baixo, se iniciando em uma nova linha, ocupa a largura inteira da janela (100% do view port) e ao fim, pula mais uma linha, antes de começar o novo conteúdo.
+
+	ex:	<div>	 	<h1>	 	<p>	 	       <main>
+		<header>	<nav>		<article>	       <aside>
+		<footer>	        <form>	        <video>	
+
+ -  inline-level: inicia a caixa na mesma linha onde termina o texto, tem tamanho suficiente para conter o conteúdo e ao fim, o texto continua na mesma linha após a caixa.
+
+	ex:	<span>	        <a>		        <code>	        <small>
+		<strong>	<em>		<sup>		<sub>
+		<label>	        <button>	<input>	        <select>

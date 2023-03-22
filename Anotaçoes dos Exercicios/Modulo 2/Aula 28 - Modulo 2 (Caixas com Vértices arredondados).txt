@@ -1,0 +1,19 @@
+          border-radius:    ;
+
+Shorthand:   Inicia no canto superior esquerdo (border-top-left-radius) e segue o sentido horário.
+
+	ex:	border-radius: 10px 20px 30px 40px;
+
+   Com 2 valores:	
+
+		1º valor: border-top-left-radius e border-bottom-right-radius
+
+		2º valor: border-top-right-radius e border-bottom-left-radius
+
+	ex:	border-radius: 10px 20px;
+
+Transformando uma div em bola:
+
+	div {
+	  border-radius: 50%;
+	}

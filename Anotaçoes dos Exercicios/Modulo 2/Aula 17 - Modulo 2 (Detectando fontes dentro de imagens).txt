@@ -1,0 +1,5 @@
+Para identificar fontes dentro de imagens, dependemos de alguns sites que fornecem uma função de "visão  computacional" para analisar e detectar fontes dentro dessas imagens. 
+
+Os sites indicados são: "What Font Is" e o "Font Squirrel"
+
+O mais eficiente e mais "inteligente" é o What Font Is, caso não consiga identificar a sua fonte com ele, passe para o próximo e tente novamente.

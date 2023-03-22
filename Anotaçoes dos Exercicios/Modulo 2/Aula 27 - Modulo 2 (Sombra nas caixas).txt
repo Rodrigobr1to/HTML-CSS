@@ -1,0 +1,16 @@
+SOMBRA NAS CAIXAS
+
+Shorthand básico:
+
+   box-shadow: desl. horizontal, desl. vertical, espalhamento, cor da sombra;
+
+	ex:	box-shadow: 1px 1px 1px black;
+
+ - Após declarado o box-shadow com quaisquer valores no VS Code, o DevTools do Chrome pode ser útil para editar/acrescentar parâmetros de sombra, indo na parte de html, clicando na tag em questão e ajustando os parâmetros no shadow editor.
+
+Shorthand completo:
+
+ - Pode ser adicionado o parâmetro 'inset' na frente dos demais, no shorthand,  caso queira ter uma sombra interna.
+ - Pode ser adicionado um valor para o alcance da sombra (spread), antes da cor no shorthand.
+
+	ex:	box-shadow: inset 5px 3px 7px 1px rgba(0, 0, 0, 0.493);

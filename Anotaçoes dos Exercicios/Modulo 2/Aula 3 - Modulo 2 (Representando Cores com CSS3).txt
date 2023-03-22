@@ -1,0 +1,21 @@
+<h2 style="background-color: blue; color: white;">Exemplo de Cores</h2>
+
+Representação por códigos hexadecimais: (0 1 2 3 4 5 6 7 8 9 a b c d e f)
+
+	<h2 style="background-color: # 0 0 0 0 f f; color: # f f f f f f;">Exemplo de Cores</h2>
+
+Representação em rgb(red, green, blue): (cada cor de 0 a 255)
+
+	<h2 style="background-color: rgb(0, 0, 255); color: rgb(255, 255, 255);">	Exemplo de Cores</h2>
+
+Representação em hsl(hue, saturation, lightness):
+
+	<h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%,100%);">Exemplo de Cores</h2>
+
+Representação em rgba e hsla: rgb ou hsl com transparência
+
+	<h2 style="background-color: rgba(0, 0, 255, 0.76); color: rgba(255, 255, 255, 0.493);">Exemplo de Cores</h2>
+
+	<h2 style="background-color: hsla(240, 100%, 50%, 0.438); color: hsla(0, 0%, 100%, 0.541);">Exemplo de Cores</h2>
+
+-> Dica para copiar e colar um texto acima ou abaixo: deixa o cursor em cima do texto, segura Shift + Alt e usa seta para cima ou para baixo>

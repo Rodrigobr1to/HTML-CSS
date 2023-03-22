@@ -1,0 +1,16 @@
+No arquivo .html:
+
+	<h1 id="principal">Criando Sites com HTML e CSS</h1>
+
+No arquivo .css:
+
+	h1#principal {
+    		text-align: center;
+		background-color: rgb(4, 109, 0);
+		color: white;
+	}
+
+   - Obs: o h1 antes de# é opcional	->	#principal
+
+        id em HTML = # em CSS
+     class em HTML = . em CSS

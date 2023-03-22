@@ -1,0 +1,12 @@
+pode se deixar a imagem com responsividade desta forma:
+
+ img{
+           min-width: 10%;
+           max-width: 100%;
+        }
+a imagem vai ficar com o maximo do tamanho que ela tem originamente, e com o minimo adquado para celular.
+se colocar somente:
+img{
+     width: 100%;
+}
+a imagem vai espandir mais doque o tamanho que ela é originalmente.

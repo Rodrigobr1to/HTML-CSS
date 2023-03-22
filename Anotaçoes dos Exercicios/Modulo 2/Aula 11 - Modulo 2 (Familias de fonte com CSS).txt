@@ -1,0 +1,15 @@
+Font-family mais comuns:    Arial, Verdana e Helvetica
+
+    font-family: 'Courier New';   -> nomes compostos precisam de 'aspas'
+    font-family: sans-serif;	    -> qualquer fonte sem serifa
+    font-family: serif;		    -> qualquer fonte com serifa
+    font-family: monospace;     -> qualquer fonte monoespaçada
+
+Safe combination:
+
+	Se não tiver uma opção de fonte, passa para a seguinte. (Pesquisar mais: CSS web safe font combinations). 
+
+	Ex:	font-family: Arial, Helvetica, sans-serif;
+		font-family: 'Times New Roman', Times, serif;
+
+ *Dica: Após "font-family:", ao clicar Ctrl + Espaço, o VS Code sugere as principais safe combinations.

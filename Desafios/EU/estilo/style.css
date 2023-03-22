@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    background-color: black;
+}
+
+header{
+    text-align: center;
+    color: white;
+    background-image:linear-gradient(to bottom, #181D63, #7D84E8,#3642E3);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+nav{
+    background-color: #3642E3;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px;
+    margin-right: 10px;
+    display: inline-block;
+    transition-duration: 1s;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: black;
+    background-color: aqua;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+main{
+    background-color: white;
+    display: inline-block;
+}
+
+div.video{
+    display: inline-block;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    padding: 50px;
+    padding-bottom: 30%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+div.video2{
+    display: inline-block;
+    width: 400px;
+    height: 100px;
+    position: relative;
+    padding-top: 30%;
+}
+
+div.video2 > iframe{
+    position: absolute;
+    margin: -223px 13px;
+    top: 5%;
+    left: 5%;
+    width: 80%;
+    height: 80%;
+}

@@ -1,0 +1,4 @@
+@charset "UTF-8";
+body{
+    background: linear-gradient(to right, green, yellow, blue);
+}
