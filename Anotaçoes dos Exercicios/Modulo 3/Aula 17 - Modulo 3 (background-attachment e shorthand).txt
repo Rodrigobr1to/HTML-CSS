@@ -1,0 +1,33 @@
+Como já sabemos, se o conteúdo da nossa página for grande o suficiente para criar uma barra de rolagem, mesmo que a nossa imagem de fundo esteja corretamente configurada com um "background-size" valor "cover" e outras propriedades, ao scrollar para baixo, a imagem de fundo vai ter um comportamento de quebra de repetição ou borda no background...
+
+Para evitar isso é necessário configurar o vínculo da imagem de fundo... Ou seja, configurar se o nosso background vai ser ligado ao conteúdo da página ou se ele vai ficar travado na tela.
+
+Quando travamos o nosso background, significa que mesmo que o conteúdo da página seja scrollado, o fundo se mantem fixo... Sem quebras de repetição o bordas, isso se chama "vínculo".
+
+Para fazer isso, usamos a Propriedade de Estilo " background-attachment ", essa propriedade configura a relação do vínculo do background. Basicamente essa propriedade aceitas dois valores, que são:
+
+scroll - Esse é o valor padrão, se não determinarmos nada, é esse valor que vai prevalecer. Faz o fundo (imagem de fundo) rolar junto com o conteúdo da página.
+
+fixed - A imagem de fundo ficará fixa (travada) enquanto o conteúdo vai sendo rolado.
+
+Como vimos anteriormente, existem muitas Propriedades de Estilo para o background, entretanto é possível simplificar todos elas em uma declaração shorthand... A propriedade abreviada (shorthand) " background " deve ser declarada, agrupando e seguindo a ordem das seguintes configurações:
+
+background-color
+background-image
+background-position 
+background-repeat 
+background-attachment
+
+Exemplo da shorthand:
+
+background: black url(imagens/wallpaper003.jpg) center center no-repeat fixed;
+
+Sendo assim... No lugar de declarar individualmente, linha por linha, todas as propriedades background apresentadas até aqui, usamos a declaração shorthand simplificada do exemplo acima.
+
+Observação: É possível declarar essa shorthand, na ordem orientada, mas com a propriedade background-size inserida como o antepenúltimo valor (depois do background-position)... Entretanto, para isso de fato funcionar, teremos que colocar uma barra ( / ) sem espaçamento antes do valor do size. O background-size inserido na shorthand sem essa barra simplesmente resultará num erro.
+
+Exemplo:
+
+background: black url(imagens/teste03.gif) center center/cover no-repeat fixed;
+
+Se não quiser inserir a propriedade background-size com a barra na shorthand, é só declarar individualmente.
