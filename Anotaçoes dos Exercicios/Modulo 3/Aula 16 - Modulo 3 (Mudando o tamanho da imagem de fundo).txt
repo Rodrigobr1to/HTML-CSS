@@ -1,0 +1,30 @@
+Mudando o tamanho da imagem de fundo do site
+
+background-size: 100%  100%;	-> preenche a tela, mas achata e distorce a imagem
+		                countain;  	-> a imagem é 100% exibida, com laterais vazias as vezes
+		                cover;		-> cobre a tela toda mesmo que tenha que cortar a imagem
+
+
+Voltando a falar sobre a Propriedade de Estilo " background-size ": Essa propriedade aceita quatro tipos de valores diferentes, anteriormente entendemos um pouco sobre o tipo de valor " largura x altura "... 
+
+É importante destacar que, caso configuremos o tamanho da nossa imagem com esse tipo de valor (largura x altura), a dimensão especificada para a imagem será fixa na tela independentemente do tamanho da viewport (navegador), resultando em páginas não responsivas, em quebras de repetição ou bordas no background. 
+
+É possível "contornar" isso inserindo valores em % (ex: 100% 100%)... Mas dessa forma, apesar de resolver o problema das quebras de repetição ou bordas no fundo, a nossa imagem ficará DISTORCIDA. Por isso não é muito recomendado usar esse tipo de valor (largura x altura) aplicado para o background, nem mesmo em %.
+
+Tendo isso em mente, vamos entender melhor sobre como funciona os outros três tipos valores nominais para a propriedade background-size, que são: auto, contain e cover.
+
+auto - Esse é o valor padrão, se não determinarmos nada, é esse valor que vai prevalecer. Ele faz justamente a imagem de fundo ser aplicada na dimensão original. Dessa forma, normalmente a imagem fica com quebras de repetição ou bordas no background, ocasionando em um resultado não responsivo.
+
+contain - Muda o tamanho da imagem para que ela sempre seja totalmente exibida na tela, sem nenhum corte. Dessa forma, geralmente  a imagem também fica com quebras de repetição ou bordas no background, ocasionando em um resultado não responsivo.
+
+cover - Redimensiona a imagem para que ela cubra todo o contêiner, mesmo que para isso ocorram alguns eventuais cortes ( não tem distorção ). Ele vai cobrir a tela inteira, independentemente do tamanho dessa tela, mesmo que pra isso tenha que cortar um pouco a imagem. Esse valor é o mais recomendado para se obter resultados responsivos.
+
+No fim das contas, não existe um valor absoluto que é sempre melhor que o outro, tudo vai depender do que você quer fazer.
+
+Se o conteúdo da nossa página for grande o suficiente para criar uma barra de rolagem, mesmo que a nossa imagem de fundo esteja corretamente configurada com um "background-size" valor "cover" e outras propriedades, ao scrollar para baixo, a imagem de fundo vai ter um comportamento de quebra de repetição ou borda no background... Mais adiante vamos ver como evitar isso.
+
+Observação: Quando usamos imagens de fundo, é natural pensarmos que não é necessário configurar uma cor de fundo... Entretanto, é sim recomendável que você configure uma cor de fundo, mesmo que posteriormente aplique uma imagem de fundo por cima dessa cor. 
+
+Isso porque quando o nosso site é carregado, primeiro é carregado o conteúdo HTML, sendo interpretado pelo navegador, e só depois é que as imagens são encaminhadas. Primeiro chega o texto e depois as imagens... Então durante esse processamento, principalmente se o seu servidor estiver lento, pode ser que ele carregue o site (texto), e a imagem de fundo (que é um arquivo um pouco mais pesado) demore alguns segundos para ser exibida. 
+
+Sendo assim, não é recomendado que você mostre o site branco e depois a imagem apareça... O ideal é que você coloque uma cor no fundo para que o usuário consiga já ir consumindo o conteúdo e aí sim posteriormente a imagem seja exposta.
