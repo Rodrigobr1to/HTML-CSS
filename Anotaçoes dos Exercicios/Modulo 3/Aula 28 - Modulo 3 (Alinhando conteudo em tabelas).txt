@@ -1,0 +1,24 @@
+Dentro de uma célula de tabela (dado de tabela), é possível alterar o alinhamento do texto dessa célula... Tanto o Alinhamento Horizontal (coluna esquerda, central e direita) quanto o Alinhamento Vertical (linha do topo, centro e base).
+
+Para fazer o alinhamento horizontal: Devemos abrir um seletor para o elemento " td " e usar a Propriedade de Estilo " text-align ", onde podemos alinhar os textos atribuindo os valores " left ", " center " ou " right ".
+
+Para fazer o alinhamento vertical: Devemos abrir um seletor para o elemento " td " e usar a Propriedade de Estilo " vertical-align ", onde podemos alinhar os textos atribuindo os valores " top ", " middle " e " bottom ".
+
+Observação: Você pode configurar uma identificação (id ou class) para uma célula específica ( td ) que você queira mudar o alinhamento do texto, dessa forma isso acontecerá de forma isolada, alinhando o texto só daquela célula de você identificou.
+
+Alinhamento horizontal:
+
+	      text-align: 	left;		(padrão)
+			                center;
+			                right;
+
+Alinhamento vertical:	
+
+	vertical-align:	top;
+			                middle;	(padrão)
+			                bottom;
+
+
+Para números à direita (padrão do Excel):
+
+	- Criar uma classe e alinhar os "td" dessa classe à direita (right).
