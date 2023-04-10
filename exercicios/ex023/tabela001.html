@@ -16,49 +16,57 @@
         }
 
         tr.linha{
-            background-color: green;
+            background-color: gray;
         }
 
-        tr.linha2{
-            background-color: red;
+        tr.dado{
+            background-color: aqua;
         }
 
         td{
             border: 1px solid black;
-            padding: 8px;
+            padding: 5px;
+        }
+
+        td:hover{
+            color: white;
+            background-color: rgb(0, 0, 0);
+        }
+
+        td.dado{
+            background-color: red;
         }
     </style>
 </head>
 <body>
     <h1>Minha primeira tabela</h1>
-    <!--
-        HIERARQUIA DE TABELAS (simples)
-        TABLE = tabela
-            TABLE ROW = linha de tabela
+    <!-- HIERARQUIA DE TABELAS (simples)
+    TABLE = tabela
+        TABLE ROWS = linha de tabela
             TABLE HEADER = cabeçalho de tabela
             TABLE DATA = dado de tabela
     -->
     <table>
-        <tr class="linha2"> <!-- Primeira linha-->
-            <td>A1</td>
-            <td>B1</td>
-            <td>C1</td>
-        </tr>
-        <tr class="linha">
-            <td>A2</td>
-            <td>B2</td>
-            <td>C2</td>
-        </tr>
-        <tr class="linha2">
-            <td>A3</td>
-            <td>B3</td>
-            <td>C3</td>
-        </tr>
-        <tr class="linha">
-            <td>A4</td>
-            <td>B4</td>
-            <td>C4</td>
-        </tr>
-    </table>
+    <tr class="linha">
+        <td>A1</td>
+        <td>B1</td>
+        <td>C1</td>
+    </tr>
+    <tr class="dado">
+        <td>A2</td>
+        <td>B2</td>
+        <td>C2</td>
+    </tr>
+    <tr class="linha">
+        <td>A3</td>
+        <td>B3</td>
+        <td>C3</td>
+    </tr>
+    <tr class="dado">
+        <td>A4</td>
+        <td>B4</td>
+        <td>C4</td>
+    </tr>
+</table>
 </body>
 </html>
