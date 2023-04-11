@@ -1,0 +1,96 @@
+ANATOMIA DE TABELAS GRANDES:
+
+Com o avanço do HTML5, surgiram algumas tags semânticas para tabelas, principalmente para tabelas com muitos conteúdos, tabelas grandes...
+
+Se você vai estruturar uma tabela simples, a recomendação do consórcio W3C é usar o método tradicional de criação de tabelas... Agora, se você for criar uma tabela que tenha uma maior quantidade de dados, que precisa ser analisada por mecanismos de busca, é recomendado pelo W3C utilizar o método desenvolvido para criação de tabelas grandes, com tags semânticas.
+
+Entretanto, nada impede você de usar o método de estruturação de tabelas grandes em tabelas simples, fazer qualquer tabela com tags semânticas (cabeça, corpo e rodapé)... Na verdade isso é até recomendado por alguns desenvolvedores, pelo motivo de ficar semanticamente mais organizado e manter a tabela e os seus dados indexados.
+
+HIERARQUIA DE TABELAS GRANDES:
+
+Anteriormente aprendemos que existe uma hierarquia para tabelas simples... Já para as tabelas grandes, basicamente iremos continuar usando a mesma estrutura hierárquica das tabelas simples, só que agora acrescentando as características anatômicas especificas de tabelas grandes (Cabeça, corpo e rodapé).
+
+As tabelas grandes em HTML possuem a seguinte hierarquia:
+
+TABLE = tabela
+	THEAD = cabeça
+			TR = linha de tabela
+						TH, TD
+	TBODY = corpo
+			TR = linha de tabela
+						TH, TD
+	TFOOT = rodapé
+			TR = linha de tabela
+						TH, TD
+			
+Na hierarquia acima, perceba que a estrutura é dividida em três áreas, que são: Cabeça (THEAD), Corpo (TBODY) e Rodapé (TFOOT). 
+
+Dentro de cada uma dessas áreas, podemos ter Linhas de Tabela (table row - tr)... E dentro dessas linhas, podemos ter Células de Dado (table data - td) ou Células de Título (table header - th).
+
+Não necessariamente a sua tabela grande precisa ter uma cabeça ou rodapé, você pode muito bem construí-la só com a parte do corpo (TBODY) e adicionar suas linhas e células por exemplo... Visto que usamos a área da cabeça para inserir o nosso cabeçalho (títulos) e a área do rodapé para inserir dados de somatória ou até mesmo de títulos também, sendo que nem todas as tabelas irão ter um cabeçalho ou rodapé.
+
+ESTILIZAÇÃO DE TABELAS GRANDES:
+
+Linhas de Grade e Paddings:
+
+Na hora de acrescentar as linhas de grade na sua tabela grande, lembre-se que não basta apenas adicionar a configuração de borda para o elemento "td" como fazemos com tabelas simples... A configuração de borda também deve ser adicionada para o elemento "th"... Visto que, sendo uma tabela grande, tem cabeçalho e rodapé na maioria das vezes.
+
+Uma dica é: Abrir um único seletor, separado por vírgula, para os dois elementos (td e th) e aí sim adicionar a declaração de borda, criando uma linha de grade que abrange toda a tabela (Cabeça, corpo e rodapé). Se você pretende inserir paddings nas células da sua tabela, insira a declaração também nesse seletor, assim a mesma configuração de padding será válida para a tabela inteira (três áreas).
+
+Exemplo de código:
+
+td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+Observação: A tag de célula "th" (table header) não precisa ser usada exclusivamente dentro da área da cabeça (thead)... Na verdade você pode usar essa tag sempre que precisar criar uma célula de título, de rótulo... Por exemplo, na área do rodapé (tfoot) podemos ter a necessidade de usar uma célula de título... Ex: cell = " Total de Habitantes: " - Nesse caso podemos usar o th sem problema nenhum, mesmo sendo no rodapé da tabela, visto que é um título.
+
+Células de Título = th
+
+Células de Dado = td (um dado pode ser em forma textual também, nem sempre é um número)
+
+Aviso: O texto de toda célula de título (th - table header) por padrão já vem em negrito e centralizado. Isso pode ser modificado se você desejar.
+
+Estilização das áreas semânticas da tabela (thead, tbody e tfoot):
+
+Como a estrutura de uma tabela grande normalmente é dividida semanticamente em três áreas, cabeça (tag: thead), corpo (tag: tbody) e rodapé (tag: tfoot), você pode muito bem abrir seletores CSS para essas tags/elementos e estilizar essas áreas de determinadas formas... Por exemplo, abrir um seletor para o elemento "tbody" e mudar a cor de fundo (background-color) do corpo da sua tabela, mudar a cor da letra dessa área e por aí vai... Ou pode fazer algo assim para o cabeçalho e rodapé também.
+
+Você também pode abrir um único seletor, separado por vírgula, para dois ou mais elementos semânticos de área, (ex: thead, tfoot {...} ) e aí sim adicionar uma declaração de background-color ou de cor da letra por exemplo, assim a mesma e única configuração de estilo será válida para as respectivas áreas.
+
+Exemplo de código:
+
+thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+Nota: Enquanto você monta a sua tabela (qualquer coisa na verdade), principalmente se tiver muitos itens, é interessante ir adicionando os itens aos poucos e ir sempre verificando no navegador se não houve nenhum problema, para só então prosseguir. Não faça tudo de uma vez para só depois ir verificar se está certo, porque se der algum erro, você vai ter um código gigante para analisar e consertar.
+
+Uma coisa que deve ser destacada é que, normalmente, dados numéricos de uma tabela são alinhados pela direita... Então, caso a sua tabela tenha alguma coluna com dados numéricos, seria bom que você alinhasse esses números pelo lado direito. Para fazer isso, é interessante atribuir uma classe para as células de dado numérico que você pretende alinhar e executar a declaração só para as tags que possuem essa identificação.
+
+ Ex: <table>
+        	<thead>
+            	        <tr>
+                		<th>Estado</th>
+                		<th>População</th>
+            		</tr>
+        	</thead>
+        	<tbody>
+            		<tr>
+                		<td>São Paulo</td>
+                		<td class="num">              </td>
+            		</tr>
+            		<tr>
+                		<td>Minas Gerais</td>
+                		<td class="num">              </td>
+            		</tr>
+		</tbody>
+        	<tfoot>
+            		<tr>
+                		<th>Total de Habitantes</th>
+                		<td class="num"><strong>          </strong></td>
+            		</tr>
+        	</tfoot>
+    	</table>
+
