@@ -12,23 +12,32 @@
 
         table{
             border-collapse: collapse;
-            width: 500px;
         }
-
-        td, th{
-            text-align: center;
-            border: 1px solid black;
-            padding: 10px;
-        }
-
+        
         thead, tfoot{
             background-color: gray;
             color: white;
         }
 
-        .num{
+        tr, th, td{
+            border: 1px solid black;
+            padding: 10px;
+            width: 200px;
+        }
+
+        td a{
+            color: black;
+            text-decoration: none;
+        }
+
+        td a:hover{
+            text-decoration: underline;
+        }
+
+        .numero{
             text-align: right;
         }
+
     </style>
 </head>
 <body>
@@ -43,49 +52,40 @@
         TR, TD, TH
     -->
     <table>
-        <thead>
+       <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populaçao</th>
+                <th>Unidade Federativa</th>
+                <th>Área KM<sup>2</sup></th>
             </tr>
-        </thead>
-        <tbody>
+       </thead>
+       <tbody>
             <tr>
-                <td>Sao paulo</td>
-                <td class="num">45 919 049</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">21 168 791</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Amazonas" target="_blank">Amazonas</a></th>
+                <td class="numero">1 559 167,889</td>
             </tr>
             <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17 264 943</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Par%C3%A1" target="_blank">Pará</a></td>
+                <td class="numero">1 245  870,798</td>
             </tr>
             <tr>
-                <td>Bahia</td>
-                <td class="num">14 873 064</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Mato_Grosso" target="_blank">Mato Grosso</a></td>
+                <td class="numero">903 207,019</td>
             </tr>
             <tr>
-                <td>Paraná</td>
-                <td class="num"> 11 433 957</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank">Minas Gerais</a></td>
+                <td class="numero">586 521,123</td>
             </tr>
             <tr>
-                <td>Rio Grande do Sul</td>
-                <td class="num">11 377 239</td>
+                <td><a href="https://pt.wikipedia.org/wiki/Bahia" target="_blank">Bahia</a></td>
+                <td class="numero">564 760,427</td>
             </tr>
+       </tbody>
+       <tfoot>
             <tr>
-                <td>Pernambuco</td>
-                <td class="num">9 557 071</td>
+                <td>Total</td>
+                <td class="numero"><strong>8 510 295,914</strong></td>
             </tr>
-
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>117 220 012</strong></td>
-            </tr>
-        </tfoot>
+       </tfoot>
     </table>     
 </body>
 </html>
