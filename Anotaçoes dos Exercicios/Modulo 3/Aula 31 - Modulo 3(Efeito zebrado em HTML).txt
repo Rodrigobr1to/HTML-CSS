@@ -1,0 +1,27 @@
+Em tabelas que possuem muitos dados, divididos em muitas colunas e ainda com letras pequenas, fica difícil para o nosso cérebro saber onde está um determinado dado... Um dos recursos muito utilizados para melhorar essa questão é o efeito zebrado, que é colocar uma linha de cada cor dentro da sua tabela.
+
+Para criar o efeito zebrado dentro das linhas da sua tabela, é importante que determinemos em que parte da tabela queremos aplicar esse efeito, geralmente aplicamos somente nas linhas da parte do corpo da tabela (tbody).
+
+Para fazer isso, basicamente devemos abrir um seletor para o elemento " tbody ", indicado o seu filho direto que queremos formatar, que no caso é o " tr " (linha de tabela)... No elemento tr, iremos usar a pseudo-classe " nth-child() ". Para essa pseudo-classe, devemos inserir um valor dentro dos parênteses: O valor para aplicar o efeito zebrado é o " 2n ", que faz com que o background-color configurado para a linha seja inserido de duas em duas linhas, uma sim e uma não (mude o valor numérico se desejar um intervalo maior de inserção).
+
+Ficaria assim:
+
+tbody > tr:nth-child(2n) {
+    background-color: lightgray;
+}
+
+Obs.: Dentro do seletor exemplificado acima, temos uma declaração de especificação de background, a cor determinada nessa declaração que vai ser aplicada nas linhas zebradas.
+
+Na pseudo-classe " nth-child() ", ao invés de usarmos o valor " 2n ", também podemos usar os valores nominais " even " OU " odd " (par ou ímpar). Com um desses dois nomes como valor, podemos deixar toda linha que é ímpar (odd) com background, ou vice-versa, se for o valor even.
+
+O valor " 2n " seria equivalente ao valor nominal " even " (par)
+
+Entretanto, também temos o valor " 2n-1 ", que seria equivalente ao valor nominal " odd " (ímpar)
+
+Como já foi digo, dentro do seu seletor, você deve determinar uma cor para o background da linha, entretanto esse seletor só vai aplicar essa cor para as linhas pares (ou impares se for o caso), gerando o efeito zebrado...
+
+Dessa forma, uma dica é abrir um outro seletor, idêntico ao primeiro mas com um valor OPOSTO para a pseudo-classe " nth-child() " (se o valor do primeiro seletor é odd, para o segundo tem que ser even e vice-versa). E a cor do background configurada nesse segundo seletor tem que ser diferente. Assim você criará um efeito zebrado com cores que se alternam... Uma linha azul e outra amarela e assim por diante por exemplo.
+
+Com a pseudo-classe " nth-child() " exemplificamos o efeito zebrado com uma declaração de background-color dentro do seletor, entretanto, além da cor, dentro desse mesmo seletor você também pode fazer outras alterações que se manifestam de forma alternada (linha sim, linha não). Como por exemplo: Mudar o tamanho da letra, peso da letra, sublinhar e por aí vai...
+
+Nota: Você deve utilizar a técnica do efeito zebrado em tabelas que tem muitos dados lateralmente (muitas colunas), quando a letra é muito pequena e quando a tabela tem muitas linhas.

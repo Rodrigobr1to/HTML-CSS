@@ -11,27 +11,33 @@
         }
 
         table{
+            width: 500px;
             border-collapse: collapse;
         }
         
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(205, 201, 201);
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(37, 36, 36);
             color: white;
         }
 
-        tr, th, td{
+        th, td{
             border: 1px solid black;
             padding: 10px;
-            width: 200px;
         }
 
-        td a{
-            color: black;
-            text-decoration: none;
+        tbody > tr:nth-child(even){ /* 2n-1 */
+            background-color: aqua;
         }
 
-        td a:hover{
-            text-decoration: underline;
+        tbody > tr:nth-child(odd){ /* 2n   */
+            background-color: gray;
         }
 
         .numero{
@@ -44,6 +50,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION 
         THEAD
             TR, TD, TH
         TBODY
@@ -52,37 +59,58 @@
         TR, TD, TH
     -->
     <table>
+        <caption>Populaçao das Unidades Federativas</caption>
        <thead>
             <tr>
-                <th>Unidade Federativa</th>
-                <th>Área KM<sup>2</sup></th>
+                <th scope="col">Estados</th>
+                <th scope="col" style="width: 150px;">Área KM<sup>2</sup></th>
             </tr>
        </thead>
        <tbody>
             <tr>
-                <td><a href="https://pt.wikipedia.org/wiki/Amazonas" target="_blank">Amazonas</a></th>
+                <td>Sao Paulo</th>
                 <td class="numero">1 559 167,889</td>
             </tr>
             <tr>
-                <td><a href="https://pt.wikipedia.org/wiki/Par%C3%A1" target="_blank">Pará</a></td>
+                <td>Minas Gerais</td>
                 <td class="numero">1 245  870,798</td>
             </tr>
             <tr>
-                <td><a href="https://pt.wikipedia.org/wiki/Mato_Grosso" target="_blank">Mato Grosso</a></td>
+                <td>Rio de Janeiro</td>
                 <td class="numero">903 207,019</td>
             </tr>
             <tr>
-                <td><a href="https://pt.wikipedia.org/wiki/Minas_Gerais" target="_blank">Minas Gerais</a></td>
+                <td>Bahia</td>
                 <td class="numero">586 521,123</td>
             </tr>
             <tr>
-                <td><a href="https://pt.wikipedia.org/wiki/Bahia" target="_blank">Bahia</a></td>
+                <td>Paraná</td>
                 <td class="numero">564 760,427</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">11 377 239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 557 071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">9 132 078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8 602 865</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">8 431 390</td>
             </tr>
        </tbody>
        <tfoot>
             <tr>
-                <td>Total</td>
+                <th scope="row">Total</th>
                 <td class="numero"><strong>8 510 295,914</strong></td>
             </tr>
        </tfoot>

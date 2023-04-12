@@ -1,0 +1,19 @@
+ESCOPOS DOS TH:
+
+Os desenvolvedores iniciantes geralmente confundem muito aquilo que é "th" com aquilo que é "td"... Eles se confundem no momento de escolher se irão usar th ou td... E na dúvida acabam usando o td para tudo, é aí que mudam o significado das coisas. Isso é ruim porque no HTML o significado dos elementos é algo muito importante.
+
+Você pode usar a tag th (table header) sempre que precisar criar uma célula de título, de rótulo... Essa tag (th) serve para especificarmos o título de uma coluna ou até mesmo de uma linha. Essa tag também não precisa ser usada exclusivamente dentro da área da cabeça (thead)... Por exemplo, na área do rodapé (tfoot) podemos ter a necessidade de usar uma célula de título... Ex: cell = " Total de Habitantes: " - Nesse caso podemos usar o th sem problema nenhum, mesmo sendo no rodapé da tabela, visto que é um título.
+
+Células de Título = th
+
+Células de Dado = td (um dado pode ser em forma textual também, nem sempre é um número)
+
+Como foi dito, você pode usar a tag th para determinar um título. Na sua tabela, esse título pode ser referente à uma COLUNA (dados abaixo da célula de título) ou uma LINHA (dados ao lado da célula de título).
+
+Dessa forma, existe um parâmetro para a tag th, e esse parâmetro serve justamente para especificarmos se o título da nossa célula é para uma coluna ou para uma linha. Esse parâmetro é o " scope ", você deve inseri-lo dentro da tag de abertura do th.
+
+Se o título da sua célula for para uma COLUNA, use como definição do parâmetro " scope " o VALOR " col ".
+
+Se o título da sua célula for para uma LINHA, use como definição do parâmetro " scope " o VALOR " row ".
+
+Esse parâmetro é importante para que os mecanismos de busca (google por ex) consigam analisar dos dados da sua tabela de forma coerente, de forma que faça sentido. Tais parâmetros não causam nenhum resultado visual, mas é muito útil de um ponto de vista semântico. 

@@ -69,6 +69,11 @@ Nota: Enquanto você monta a sua tabela (qualquer coisa na verdade), principalme
 
 Uma coisa que deve ser destacada é que, normalmente, dados numéricos de uma tabela são alinhados pela direita... Então, caso a sua tabela tenha alguma coluna com dados numéricos, seria bom que você alinhasse esses números pelo lado direito. Para fazer isso, é interessante atribuir uma classe para as células de dado numérico que você pretende alinhar e executar a declaração só para as tags que possuem essa identificação.
 
+DIFERENNÇA ENTRE TD E TH
+
+TH = serve para o titulo da tabela
+TD = serve para os dado da tabela
+
  Ex: <table>
         	<thead>
             	        <tr>
